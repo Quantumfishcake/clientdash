@@ -1,28 +1,42 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <MainBody msg="Client Dashboard" number='44'/>
+   
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+import axios from 'axios'
+import VueCharts from 'vue-chartjs'
+import VueAxios from 'vue-axios'
+import MainBody from './components/MainBody.vue'
+import Row1 from './components/Rows/Row1.vue'
+import Header from './components/Header.vue'
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+ 
+Vue.use(VueAxios, axios)
+
+Vue.use(VueCharts);
+Vue.use(BootstrapVue);
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    MainBody,
+    Header,
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang='scss'>
+@import '../src/assets/css/master.scss';
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,700');
+
 </style>

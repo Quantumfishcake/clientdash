@@ -1,0 +1,448 @@
+
+$primary-color: #FAF9F5;
+$secondary-color: #ffc001;
+$positive-color: #66DAB5;
+$negative-color: #F75252;
+$primary-text-color: #D3D5D4;
+
+body {
+  margin: 0;
+  background-color: $primary-color;
+}
+
+.header {
+  background-color: white;
+}
+
+#app {
+  margin: 0;
+}
+
+h1{
+  margin: 0;
+  padding: 10px;
+}
+
+.row {
+  margin: 40px 10px;
+}
+.med-blk-txt {
+  font-family: Dosis;
+  font-size: 22.4px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #2f2f2f;
+}
+.med-grey-txt{
+  font-family: Dosis;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c4c6c5;
+}
+.col-sm {
+  border: 1px solid grey;
+}
+.col-md-8, .col-md-4, .col-md-3 {
+  border-radius: 10px;
+}
+.rounded{
+  border-radius: 10px!important;
+}
+.focal-text {
+  height: 69px;
+  font-family: Dosis;
+  font-size: 55px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffc001;
+}
+.Leads-gene{
+
+  font-family: Dosis;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #c4c6c5;
+}
+.bg-w {
+  background-color: white;
+}
+.rect-8 {
+  width: 148.6px;
+  height: 39px;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom, #ffd75f, #ffc001);
+  margin: 10px 0;
+  text-align: center;
+  position: relative;
+  right: 15px;
+}
+.SEO{
+  width: 97px;
+  height: 20px;
+  font-family: Dosis;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  padding: 10px;
+  line-height: 39px;
+}
+.inside-border {
+  border-left: 2px solid rgb(231, 231, 231);
+  border-right: 2px solid rgb(231, 231, 231);
+}
+.no-border {
+  border: none;
+  padding: 0;
+}
+.row2 {
+  height: 300px;
+}
+.col-medium {
+height: 150px;
+}
+.row-small {
+  height: 98px;
+  box-sizing: border-box;
+}
+.lg-num-blk{
+  font-family: Dosis;
+  font-size: 35px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #2f2f2f;
+}
+.right {
+  text-align: right;
+}
+.mid-txt{
+  font-family: Dosis;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c4c6c5;
+  text-transform: uppercase;
+}
+.convert-txt {
+  font-family: Dosis;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+ 
+  color: #66dab5;
+}
+.negative {
+  color: #f75252!important;
+}
+.lrg-colored{
+  font-family: Dosis;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #66dab5;
+}
+.container{
+  max-width: 90%;
+}
+.border-top-bot{
+  border-top: 2px solid #FAF9F5;
+  border-bottom: 2px solid #FAF9F5;
+}
+.toprow-grey {
+  font-family: Dosis;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c4c6c5;
+}
+.toprow-blk {
+  font-family: Dosis;
+  font-size: 28px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2f2f2f;
+}
+.toprow{
+  height: 120px;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+}
+.row.toprow div.col-md-2{
+  margin: auto;
+}
+.row.toprow div.col-md-4{
+  margin: auto;
+}
+.insights {
+  font-family: Dosis;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffc001;
+}
+.header-rectangle{
+  width: 300px;
+  height: 50px;
+  background-color: #ffc001;
+  margin: auto;
+  border-radius: 24px;
+}
+.seo-sem {
+  font-family: Dosis;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #8e6b00;
+}
+.active {
+  color: #2f2f2f
+}
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+sup {
+  font-family: Dosis;
+  font-size: 12.8px;
+  font-weight: bold;
+  top: -.75rem;
+  color: #f75252;
+}
+.table-data {
+  font-family: Dosis;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2f2f2f;
+}
+th{
+font-weight: 500;
+}
+.nav-tabs .nav-item{
+  background-color: #f2f1eb;
+  height: 60px;
+  border-radius: 10px;
+  line-height: 40px;
+  
+}
+.nav-tabs {
+  border: none;
+  // background-color: #f2f1eb;
+}
+.nav-link, .nav-link.active {
+  background-color: #f2f1eb;
+  height: 60px;
+  border-radius: 10px 10px 0 0;
+  border: none;
+}
+.tabs {
+  width: 100%;
+}
+.table thead th {
+  border: none;
+}
+.table th, .table td {
+  border-bottom: 1px solid #dee2e6;
+  border-top: none;
+}
+.nav-link {
+  border-radius: 0;
+}
+.tab-title-class{
+  font-family: Dosis;
+  font-size: 16px;
+  font-weight: bold;
+  color: #c4c6c5;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.tab-title-class .active{
+  font-size: 16px;
+  font-weight: bold;
+  color: #2f2f2f;
+}
+.tab-title-class:hover{
+  font-family: Dosis;
+  font-size: 16px;
+  font-weight: bold;
+  color: #c4c6c5;
+}
+.bg-y{
+  border-radius: 0px 20px 20px 20px;
+  background-image: linear-gradient(to bottom, #ffd75f, #ffc001);
+}
+.poster-name{
+  font-family: Dosis;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2f2f2f;
+}
+.month-list{
+  list-style-image: url('assets/images/list/fill-279.png')
+}
+.month-list li{
+  padding: 6px;
+  font-family: Dosis;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.tab-head{
+  height: 70px
+}
+.brd-top{
+  border-top: 2px solid #faf9f5
+}
+.date{
+  background-color: #efeeea;
+  border-radius: 20px;
+  position: absolute;
+  top: -18px;
+  right: 45%;
+  padding: 5px 20px;
+}
+.col-me-1{
+  width:5%;
+}
+.col-me-2{
+  width:95%;
+}
+.profile-pic{
+  height: 44px;
+  width: 44px;
+  border-radius: 10px;
+}
+ul{
+  margin-bottom: 0;
+}
+th, td{
+  padding-left:30px!important;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  border-radius:24px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffc001;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 85%;
+  width: 50%;
+  left: 5px;
+  bottom: 4px;
+  border-radius:24px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ffc001;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ffc001;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(140px);
+  -ms-transform: translateX(140px);
+  transform: translateX(140px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 20px;
+}
