@@ -1,6 +1,6 @@
 import { Bar } from 'vue-chartjs'
 import axios from 'axios'
-import VueAxios from 'vue-axios'
+
 
 export default {
 
@@ -12,7 +12,8 @@ export default {
             data1: null,
             data2: null,
             gradient: null,
-            gradient2: null
+            gradient2: null,
+            highval: null,
         }
     },
     mounted() {
@@ -29,6 +30,7 @@ export default {
                 this.info = response,
                 this.data1 = response.data['2017'],
                 this.data2 = response.data['2018'],
+                this.highval = Math.max(...this.data1, ...this.data2) * 1.1,
                 this.renderChart({
                     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
                     datasets: [
@@ -78,6 +80,7 @@ export default {
                                     fontColor: '#c4c6c5',
                                     fontFamily: 'dosis',
                                     fontSize: 14,
+                                    max: this.highval
                                 }
                             }],
                         }, 
@@ -94,7 +97,6 @@ export default {
                         }
                     })
             ))
-    }
-
+    },
 }
 

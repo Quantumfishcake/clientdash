@@ -20,8 +20,8 @@
                 </div> -->
                <label class="switch seo-sem">
                     <input id='checkbox' type="checkbox"  v-on:change='changechecked'>
-                    <span class="slider"></span>
-                    <span v-bind:class="{'active': checked}" style='position: relative; left: 205px;  top: 12px;'>SEM</span>
+                     <span class="slider"></span>
+                   <span v-bind:class="{'active': checked}" style='position: relative; left: 205px;  top: 12px;'>SEM</span>
                     <span v-bind:class="{'active': !checked}" style='position: relative; left: 33px; top: 12px;'>SEO</span>
                 </label>
             </div>
@@ -34,7 +34,7 @@
                     <div class='col-md-4 bg-w seo-sem'  style='margin: auto; border-left: 1px solid #efeeea; border-right: 1px solid #efeeea; height: 83px; line-height:75px; border-radius: 0;'>
                         <span class='helper'><img src='../assets/images/9-bell.png' style='vertical-align: middle; '/></span>
                     </div>
-                    <div class='col-md-6 seo-sem' style='margin: auto'><img src='../assets/images/2-exit.png' class='pr-2'/><span>LOGOUT</span></div>
+                    <div class='col-md-6 seo-sem' style='margin: auto'><img src='../assets/images/2-exit.png' class='pr-2'/><span><a href='/users'>LOGOUT</a></span></div>
                 </div>
        </div>
    </div>
@@ -49,6 +49,12 @@ import VueAxios from 'vue-axios'
 
 export default {
   name: 'Header',
+  computed: {
+    seosem() {
+
+      return this.$store.state.seosem
+    }
+  },
   data() {
       return {
           name: 'tom',
@@ -65,6 +71,9 @@ export default {
         },
         changechecked: function() {
             this.checked = !this.checked
+            this.$store.state.seosem[1].sem = !this.$store.state.seosem[1].sem
+            this.$store.state.seosem[0].seo = !this.$store.state.seosem[0].seo
+            console.log(this.$store.state.seosem[1].sem)
         }
     },
    

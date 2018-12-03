@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <Header />
-    <MainBody msg="Client Dashboard" number='44'/>
+    <router-view></router-view>
    
+    
   </div>
 </template>
 
@@ -12,9 +13,10 @@ import BootstrapVue from 'bootstrap-vue'
 import axios from 'axios'
 import VueCharts from 'vue-chartjs'
 import VueAxios from 'vue-axios'
+import Header from './components/Header.vue'
 import MainBody from './components/MainBody.vue'
 import Row1 from './components/Rows/Row1.vue'
-import Header from './components/Header.vue'
+
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -26,11 +28,13 @@ Vue.use(VueCharts);
 Vue.use(BootstrapVue);
 
 
+
+
 export default {
   name: 'app',
   components: {
     MainBody,
-    Header,
+    Header
   }
 }
 </script>
